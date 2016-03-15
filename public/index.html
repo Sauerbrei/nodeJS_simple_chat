@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Node.js Chat</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/socket.io-client/socket.io.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="client.js"></script>
+    </head>
+    <body>
+		<header>Chatrooms: 
+			<a href='#' class='room' id='room1'>All</a> | <a href='#' class='room' id='room2'>Private</a>
+		</header>
+		<main>
+			<ul id="content"></ul>
+		</main>
+		<aside>
+			<h1>Active Users</h1>
+			<ul id="users"></ul>
+		</aside>
+        <footer>
+            <input id="text" type="text" placeholder="schreibe etwas..." />
+            <input id="send" type="submit" value="senden" />
+			<span id="typing"></span>
+        </footer>
+    </body>
+</html>
